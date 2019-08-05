@@ -1,11 +1,13 @@
 # use-double-click
 
 [![npm](https://img.shields.io/npm/v/use-double-click.svg?color=brightgreen&style=popout-square)](https://www.npmjs.com/package/use-double-click)
-[![NPM](https://img.shields.io/npm/l/use-double-click.svg?color=brightgreen&style=popout-square)](https://github.com/tim-soft/use-double-click/blob/master/LICENSE)
+[![NPM](https://img.shields.io/github/license/tim-soft/use-double-click?color=brightgreen&style=popout-square)](https://github.com/tim-soft/use-double-click/blob/master/LICENSE)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/use-double-click.svg?style=popout-square)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=popout-square)
 
 use-double-click is a simple React hook for differentiating single and double clicks on the same component.
+
+[Check out the demo on Codesandbox](https://codesandbox.io/s/use-double-click-f7e33?expanddevtools=1&fontsize=14)
 
 ## What's wrong with `onDoubleClick()`?
 
