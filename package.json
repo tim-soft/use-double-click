@@ -82,7 +82,5 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "rollup-plugin-uglify": "^6.0.2"
-  }
+  "dependencies": {}
 }
