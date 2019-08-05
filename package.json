@@ -1,0 +1,88 @@
+{
+  "name": "use-double-click",
+  "version": "1.0.0",
+  "description": "A simple React hook for differentiating single and double clicks on the same component.",
+  "author": "Tim Ellenberger <timellenberger@gmail.com>",
+  "license": "MIT",
+  "repository": "tim-soft/use-double-click",
+  "bugs": {
+    "url": "https://github.com/tim-soft/use-double-click/issues"
+  },
+  "homepage": "https://timellenberger.com",
+  "keywords": [
+    "react",
+    "hook",
+    "double",
+    "click",
+    "ondblclick",
+    "onclick"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepare": "yarn run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write",
+      "git add --force"
+    ],
+    "*.{js, jsx}": [
+      "prettier --write",
+      "eslint --no-ignore --fix",
+      "git add --force"
+    ]
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.5.4",
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "10.0.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rollup": "^1.18.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-filesize": "^6.1.1",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}
