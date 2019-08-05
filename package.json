@@ -1,6 +1,6 @@
 {
   "name": "use-double-click",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple React hook for differentiating single and double clicks on the same component.",
   "author": "Tim Ellenberger <timellenberger@gmail.com>",
   "license": "MIT",
