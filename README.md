@@ -4,6 +4,8 @@
 [![NPM](https://img.shields.io/github/license/tim-soft/use-double-click?color=brightgreen&style=popout-square)](https://github.com/tim-soft/use-double-click/blob/master/LICENSE)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/use-double-click.svg?style=popout-square)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=popout-square)
+[![Codecov](https://img.shields.io/codecov/c/github/tim-soft/use-double-click?style=flat-square)](https://codecov.io/gh/tim-soft/use-double-click)
+[![Travis (.org)](https://img.shields.io/travis/tim-soft/use-double-click?style=flat-square)](https://travis-ci.org/tim-soft/use-double-click)
 
 use-double-click is a simple React hook for differentiating single and double clicks on the same component.
 
