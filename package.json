@@ -27,6 +27,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "coverage": "codecov",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build"
