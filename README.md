@@ -9,6 +9,8 @@
 
 use-double-click is a simple React hook for differentiating single and double clicks on the same component.
 
+**Documentation** [https://timellenberger.com/libraries/use-double-click](https://timellenberger.com/libraries/use-double-click)
+
 [Check out the demo on Codesandbox](https://codesandbox.io/s/use-double-click-f7e33?expanddevtools=1&fontsize=14)
 
 ## What's wrong with `onDoubleClick()`?
