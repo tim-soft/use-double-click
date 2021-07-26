@@ -51,17 +51,18 @@ test('calls "onSingleClick" callback with custom latency', async () => {
 });
 
 test('calls "onDoubleClick" callback with custom latency', async () => {
-  const onSingleClick = jest.fn();
+  const onDoubleClick = jest.fn();
   const latency = 150;
   const { getByText } = render(
-    <Button onSingleClick={onSingleClick} latency={latency} />
+    <Button onDoubleClick={onDoubleClick} latency={latency} />
   );
 
+  fireEvent.click(getByText(/Click Me/i));
   fireEvent.click(getByText(/Click Me/i));
 
   await new Promise(r => setTimeout(r, latency));
 
-  expect(onSingleClick).toHaveBeenCalledTimes(1);
+  expect(onDoubleClick).toHaveBeenCalledTimes(1);
 });
 
 test('calls "onSingleClick" callback consecutively outside of latency window', async () => {
