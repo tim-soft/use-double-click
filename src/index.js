@@ -16,6 +16,7 @@ const useDoubleClick = ({
 }) => {
   useEffect(() => {
     const clickRef = ref.current;
+    if (!clickRef) return;
     let clickCount = 0;
     const handleClick = e => {
       clickCount += 1;
@@ -35,7 +36,7 @@ const useDoubleClick = ({
     return () => {
       clickRef.removeEventListener('click', handleClick);
     };
-  });
+  }, [ref, latency, onSingleClick, onDoubleClick]);
 };
 
 export default useDoubleClick;
